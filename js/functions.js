@@ -2,6 +2,8 @@ function checkLenght(string, maxLength) {
   return string.length <= maxLength;
 }
 
+checkLenght('asfcs', 10);
+
 function isPalindrome(string) {
   const newString = string.toLowerCase().replaceAll(' ', '');
   let result = '';
@@ -10,6 +12,8 @@ function isPalindrome(string) {
   }
   return newString === result;
 }
+
+isPalindrome('asdsa');
 
 function getNumbers(stringIn) {
   const string = stringIn.toString();
@@ -22,3 +26,5 @@ function getNumbers(stringIn) {
   }
   return parseInt(result, 10);
 }
+
+getNumbers('jhv 45.4');
